@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Sꓘ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header-neon">
+    <div class="logo-container">
+      <div class="logo-neon" id="logo">Sꓘ</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre Mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- Secciones -->
+  <main>
+    <section id="inicio" class="section-neon">
+      <h1>Hola, <span class="neon-name">Sꓘ</span></h1>
+      <p>Practicante desarrollador Front End | Proximamente Back End | Especialista en Efectos Visuales</p>
+    </section>
+
+    <section id="sobre-mi" class="section-neon">
+      <h2>> Sobre Mí</h2>
+      <p>Nada que decir aun...</p>
+    </section>
+
+    <section id="proyectos" class="section-neon">
+      <h2>> Mis Proyectos</h2>
+      <div class="proyectos-grid">
+        <div class="proyecto-card">
+          <div class="proyecto-imagen">
+            <img src="portafolio.png" alt="Proyecto 1">
+            <div class="proyecto-overlay">
+              <div class="proyecto-links">
+                <a href="#" target="_blank" class="proyecto-link"><i class="fas fa-eye"></i> Ver Demo</a>
+                <a href="#" target="_blank" class="proyecto-link"><i class="fab fa-github"></i> Ver Código</a>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto-info">
+            <h3>Portafolio Personal</h3>
+            <p>Mi sitio web personal con diseño neon y efectos interactivos.</p>
+            <p>Es el que estás viendo actualmente.</p>
+            <div class="tech-stack">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="proyecto-card">
+          <div class="proyecto-imagen">
+            <img src="proyecto.png" alt="Proyecto 2">
+            <div class="proyecto-overlay">
+              <div class="proyecto-links">
+                <a href="#" target="_blank" class="proyecto-link"><i class="fas fa-eye"></i> Ver Demo</a>
+                <a href="#" target="_blank" class="proyecto-link"><i class="fab fa-github"></i> Ver Código</a>
+              </div>
+            </div>
+          </div>
+          <div class="proyecto-info">
+            <h3>Proyecto Futuro</h3>
+            <p>Espacio reservado para un próximo proyecto que estoy desarrollando.</p>
+            <div class="tech-stack">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="particles-js"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <section id="habilidades" class="section-neon">
+      <h2>> Mis Habilidades</h2>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Front End</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fab fa-html5"></i>
+              <span>HTML5</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 50%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-css3-alt"></i>
+              <span>CSS</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 50%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+              <div class="skill-bar">
+                <div class="skill-level" style="width: 10%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section-neon">
+      <h2>> Contacto</h2>
+      <div class="contact-buttons">
+        <a href="#!" class="contact-btn email" id="emailBtn">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+        <a href="https://wa.me/521234567890" target="_blank" class="contact-btn whatsapp">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://github.com/Jaltuve20" target="_blank" class="contact-btn github">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-neon">
+    <div class="footer-content">
+      <p>&copy; <span id="current-year"></span> Sꓘ. Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Política de Privacidad</a>
+        <a href="#" class="footer-link">Términos de Servicio</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="emailModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      
+      <div class="modal-header">
+        <h2><span class="neon-underline">Contáctame</span></h2>
+        <p class="modal-subtitle">¡Responderé en menos de 24 horas!</p>
+      </div>
+  
+      <form id="contactForm" action="https://formsubmit.co/altuveleonardo96@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://jaltuve20.github.io/Portafolio/gracias.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+  
+        <div class="form-group">
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="nombre">
+            <i class="fas fa-user"></i> Nombre completo
+          </label>
+          <div class="underline"></div>
+        </div>
+  
+        <div class="form-group">
+          <input type="email" id="email" name="email" required>
+          <label for="email">
+            <i class="fas fa-envelope"></i> Correo electrónico
+          </label>
+          <div class="underline"></div>
+        </div>
+  
+        <div class="form-group">
+          <input type="text" id="asunto" name="asunto" required>
+          <label for="asunto">
+            <i class="fas fa-tag"></i> Asunto
+          </label>
+          <div class="underline"></div>
+        </div>
+  
+        <div class="form-group">
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          <label for="mensaje">
+            <i class="fas fa-comment-alt"></i> Mensaje
+          </label>
+          <div class="underline"></div>
+        </div>
+  
+        <button type="submit" class="submit-btn">
+          <span class="btn-text">Enviar Mensaje</span>
+          <span class="btn-icon">
+            <i class="fas fa-paper-plane"></i>
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
